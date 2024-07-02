@@ -1,0 +1,26 @@
+.welcomeText {
+    opacity: 0;
+    white-space: nowrap; 
+    overflow: hidden;
+  }
+  
+  .welcomeText.typing-started {
+    animation: left-right 2s ease forwards;
+  }
+
+  .welcomeText:hover{
+    background-color: black;
+  }
+
+  
+  @keyframes left-right {
+    from {
+      width: 0;
+      opacity: 0;
+    }
+    to {
+      width: 100%;
+      opacity: 1;
+      text-align: center;
+    }
+  }
