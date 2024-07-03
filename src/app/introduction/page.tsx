@@ -22,6 +22,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Skills from '@/components/Skills/Skills';
+import Interest from '@/components/interest/Interest';
 
 const Introduction = () => {
   const [isTransitioning, setIsTransitioning] = useState(true);
@@ -330,9 +331,15 @@ const Introduction = () => {
             animate={{ x: '0%' }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
           >
-            My Interest
+            <div>
+              Interest
+            </div>
+            <div>
+              <Interest/>
+            </div>
           </motion.div>
         )}
+
       </div>
     </div>
   );
