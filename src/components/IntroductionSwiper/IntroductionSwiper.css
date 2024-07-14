@@ -1,0 +1,66 @@
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hideSecondSection {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.hideSkillsSection {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.showSecondSection {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.showSkillsScection{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.secondSection{
+  display: flex;
+}
+
+.hideSecondSection:nth-child(2){
+  transition-delay: 200ms;
+}
+.hideSecondSection:nth-child(3){
+  transition-delay: 400ms;
+}
+.hideSecondSection:nth-child(4){
+  transition-delay: 600ms;
+}
+.hideSecondSection:nth-child(5){
+  transition-delay: 800ms;
+}
+.hideSecondSection:nth-child(6){
+  transition-delay: 5s;
+}
+
+.hideSkillsSection {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
