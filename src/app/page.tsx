@@ -62,7 +62,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex flex-col">
+    <div className="flex flex-col">
       <div className="h-screen flex justify-center items-center bg-neutral-950">
         <div className="h-screen w-screen flex items-center justify-center">
           <button
@@ -80,6 +80,6 @@ export default function Home() {
           </button>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
